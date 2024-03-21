@@ -139,12 +139,14 @@ static struct key bindings[] = {
 	{ '\r',           SEL_OPEN },
 	/* Pure navigate inside */
 	{ KEY_RIGHT,      SEL_NAV_IN },
-	{ 'l',            SEL_NAV_IN },
+	{ 's',            SEL_NAV_IN },
 	/* Next */
+	{ 't',            SEL_NEXT },
 	{ 'j',            SEL_NEXT },
 	{ KEY_DOWN,       SEL_NEXT },
 	/* Previous */
 	{ 'k',            SEL_PREV },
+	{ 'n',            SEL_PREV },
 	{ KEY_UP,         SEL_PREV },
 	/* Page down */
 	{ KEY_NPAGE,      SEL_PGDN },
@@ -215,7 +217,6 @@ static struct key bindings[] = {
 	/* Create archive */
 	{ 'z',            SEL_ARCHIVE },
 	/* Sort toggles */
-	{ 't',            SEL_SORT },
 	{ CONTROL('T'),   SEL_SORT },
 	/* Redraw window */
 	{ CONTROL('L'),   SEL_REDRAW },
@@ -247,7 +248,7 @@ static struct key bindings[] = {
 	{ 'o',            SEL_OPENWITH },
 	{ CONTROL('O'),   SEL_OPENWITH },
 	/* Create a new file */
-	{ 'n',            SEL_NEW },
+	{ 'N',            SEL_NEW },
 	/* Show rename prompt */
 	{ CONTROL('R'),   SEL_RENAME },
 	/* Rename contents of current dir */
@@ -274,7 +275,7 @@ static struct key bindings[] = {
 	/* Lock screen */
 	{ '0',            SEL_LOCK },
 	/* Manage sessions */
-	{ 's',            SEL_SESSIONS },
+	//{ 's',            SEL_SESSIONS },
 	/* Export list */
 	{ '>',            SEL_EXPORT },
 	/* Set time type */
